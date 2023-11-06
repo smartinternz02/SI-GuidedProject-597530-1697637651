@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <!-- <title>Inner Page - Gp Bootstrap Template</title> -->
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.ico" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="#" onclick="redirectToPage('')">OSIs<span>.</span></a></h1>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="#hero" onclick="redirectToPage('')">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about" onclick="redirectToPage('')">About</a></li>
+          <li><a class="nav-link scrollto" href="#predict">predict</a></li>
+          <li><a class="nav-link scrollto" href="#team" onclick="redirectToPage('')">Team</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="#about" onclick="redirectToPage('')" class="get-started-btn scrollto">Get Started</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Predict Page</h2>
+          <ol>
+            <li><a href="#" onclick="redirectToPage('')">Home</a></li>
+            <li>Predict Page</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Predict Section ======= -->
+    <section id="predict" class="predict">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Predict</h2>
+          <p>Let's Predict</p>
+        </div>
+        <section id="contact" class="contact mt-0">
+          <div class="container" data-aos="fade-up">
+            <div>
+              <div>
+                <form action="/predict" method="post" role="form" id="form" class="predict-form"
+                  onsubmit="return submitForm();">
+                  <div class="row">
+                    <div class="col-md-4 form-group">
+                      <h6>Administrative</h6>
+                      <input type="number" name="Administrative" class="form-control" value="Administrative"
+                        placeholder="Administrative" required>
+                    </div>
+                    <div class="col-md-4 form-group mt-3 mt-md-0">
+                      <h6>Administrative Duration</h6>
+                      <input type="number" step="0.1" class="form-control" name="Administrative_Duration"
+                        value="Administrative_Duration" placeholder="Administrative Duration" required>
+                    </div>
+                    <div class="col-md-4 form-group mt-3 mt-md-0">
+                      <h6>Informational</h6>
+                      <input type="number" class="form-control" name="Informational" value="Informational"
+                        placeholder="Informational" required>
+                    </div>
+                  </div>
+                  <div class="row mt-5">
+                    <div class="col-md-4 form-group">
+                      <h6>Informational Duration</h6>
+                      <input type="number" step="0.1" name="Informational_Duration" class="form-control"
+                        value="Informational_Duration" placeholder="Informational Duration" required>
+                    </div>
+                    <div class="col-md-4 form-group mt-3 mt-md-0">
+                      <h6>Product Related</h6>
+                      <input type="number" class="form-control" name="ProductRelated" value="ProductRelated"
+                        placeholder="ProductRelated" required>
+                    </div>
+                    <div class="col-md-4 form-group mt-3 mt-md-0">
+                      <h6>ProductRelated Duration</h6>
+                      <input type="number" step="0.1" class="form-control" name="ProductRelated_Duration"
+                        value="ProductRelated_Duration" placeholder="ProductRelated Duration" required>
+                    </div>
+                  </div>
+                  <div class="row mt-5">
+                    <div class="col-md-4 form-group">
+                      <h6>Bounce Rates</h6>
+                      <input type="number" step="0.1" name="BounceRates" class="form-control" value="BounceRates"
+                        placeholder="BounceRates" required>
+                    </div>
+                    <div class="col-md-4 form-group mt-3 mt-md-0">
+                      <h6>Exit Rates</h6>
+                      <input type="number" step="0.1" class="form-control" name="ExitRates" value="ExitRates"
+                        placeholder="ExitRates" required>
+                    </div>
+                    <div class="col-md-4 form-group mt-3 mt-md-0">
+                      <h6>Page Values</h6>
+                      <input type="number" step="0.1" class="form-control" name="PageValues" value="PageValues"
+                        placeholder="PageValues" required>
+                    </div>
+                  </div>
+                  <div class="row mt-5">
+                    <div class="col-md-4 form-group">
+                      <h6>Special Day</h6>
+                      <input type="number" step="0.1" name="SpecialDay" class="form-control" value="SpecialDay"
+                        placeholder="Special Day" required>
+                    </div>
+                    <div class="col-md-4 form-group mt-3 mt-md-0">
+                      <h6>Month</h6>
+                      <div class="select-wrapper">
+                        <select style="height: 44px;" class="form-control" name="Month" id="Month" placeholder="month"
+                          required>
+                          <option value="1">January</option>
+                          <option value="2">February</option>
+                          <option value="3">March</option>
+                          <option value="4">April</option>
+                          <option value="5">May</option>
+                          <option value="6">June</option>
+                          <option value="7">July</option>
+                          <option value="8">August</option>
+                          <option value="9">September</option>
+                          <option value="10">October</option>
+                          <option value="11">November</option>
+                          <option value="12">December</option>
+                        </select>
+                        <div class="arrow-down"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 form-group mt-3 mt-md-0">
+                      <h6>OperatingSystems</h6>
+                      <input type="number" class="form-control" name="OperatingSystems" value="OperatingSystems"
+                        placeholder="Operating Systems" required>
+                    </div>
+                  </div>
+                  <div class="row mt-5">
+                    <div class="col-md-4 form-group">
+                      <h6>Browser</h6>
+                      <input type="number" name="Browser" class="form-control" value="Browser" placeholder="Browser"
+                        required>
+                    </div>
+                    <div class="col-md-4 form-group mt-3 mt-md-0">
+                      <h6>Region</h6>
+                      <input type="number" class="form-control" name="Region" value="Region" placeholder="Region"
+                        required>
+                    </div>
+                    <div class="col-md-4 form-group mt-3 mt-md-0">
+                      <h6>TrafficType</h6>
+                      <input type="number" class="form-control" name="TrafficType" value="TrafficType"
+                        placeholder="TrafficType" required>
+                    </div>
+                  </div>
+                  <div class="row mt-5">
+                    <div class="col-md-4 form-group">
+                      <h6>VisitorType</h6>
+                      <div class="select-wrapper">
+                        <select style="height: 44px;" class="form-control" name="VisitorType" placeholder="Weekend"
+                          required>
+                          <option value="0">Returning_Visitor</option>
+                          <option value="1">New_Visitor</option>
+                          <option value="2">Other</option>
+                        </select>
+                        <div class="arrow-down"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 form-group mt-3 mt-md-0">
+                      <h6>Weekend</h6>
+                      <div class="select-wrapper">
+                        <select style="height: 44px;" class="form-control" name="Weekend" placeholder="Weekend"
+                          required>
+                          <option value="1">True</option>
+                          <option value="0">False</option>
+                        </select>
+                        <div class="arrow-down"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your response has been sent. Thank you!</div>
+                  </div>
+                  <div class="text-center"><button type="submit" value="submit">SUBMIT</button></div>
+
+                  <a id="predict"></a>
+                  <div class="output">
+                    <h2><b>{{prediction_text}}</b></h2>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section><!-- End Prediction Section -->
+
+    <!-- ======= Footer ======= -->
+     <footer id="footer">
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="static/assets/vendor/aos/aos.js"></script>
+    <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="static/assets/vendor/predict-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="static/assets/js/main.js"></script>
+    <script>
+      function redirectToPage(page) {
+        window.location.href = "/" + page;
+      }
+    </script>
+</body>
+
+</html>
