@@ -7,7 +7,7 @@ contourpy==1.2.0
 cycler==0.12.1
 Flask==3.0.0
 fonttools==4.44.0
-gunicorn @ git+https://github.com/benoitc/gunicorn.git@430dcdd997b955fa1a8569a07d9cdcbac686fb35
+gunicorn==19.7.1
 idna==3.4
 itsdangerous==2.1.2
 Jinja2==3.1.2
