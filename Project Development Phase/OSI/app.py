@@ -50,6 +50,3 @@ def predict():
         text = 'The visitor is intereted in buying products'
 
     return render_template('inner-page.html', prediction_text=text)
-
-if __name__ == '__main__':
-    app.run(debug=True)
