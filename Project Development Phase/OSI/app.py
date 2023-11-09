@@ -42,12 +42,13 @@ def predict():
               ]]
     total = scaler.inverse_transform(total)          
     print(total)
-    prediction = model.predict(total)
+    prediction = model.predict_proba(total)
     print(prediction)
-    if prediction == 0:
-        text = 'The visitor is not interested in buying products'
-    else:
-        text = 'The visitor is intereted in buying products'
+    # if prediction == 0:
+    #     text = 'The visitor is not interested in buying products'
+    # else:
+    #     text = 'The visitor is intereted in buying products'
+    text = f"The probability of the visitor buying is {prediction[0][0]}"
 
     return render_template('inner-page.html', prediction_text=text)
 
